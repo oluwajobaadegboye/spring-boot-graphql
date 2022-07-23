@@ -1,0 +1,28 @@
+since GraphiQL is enabled in the applications.properties file
+Navigate to http://localhost:8080/graphiql?path=/graphql
+query{
+  #query to fetch list of authors
+  authors{
+    id
+    name
+    books {
+      id
+    }
+  }
+
+  authorById(id:2){
+    id
+    name
+  }
+
+  books{
+    id
+    name
+    publisher
+  }
+
+  bookById(id:3){
+    id
+    name
+  }
+}
